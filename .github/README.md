@@ -4,9 +4,9 @@
 
 
 ## Usage:  
-# Start the attack with a provided wordlist
+### Start the attack with a provided wordlist
 py main.py -u targetEmail@gmail.com -w wordlist.txt
-# Generate custom wordlist and start the attack
+### Generate custom wordlist and start the attack
 py main.py -u targetEmail@gmail.com
-# Help command
+### Help command
 py main.py --help
