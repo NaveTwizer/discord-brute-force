@@ -28,17 +28,13 @@ def wordlist_attack(username: str, wordlist: str):
         close(f'Could not locate {wordlist}. Quitting..')
     if not wordlist.endswith('.txt'):
         close('File must be a text (.txt) file. Quitting..')
-    
-    def read_file(wordlist=wordlist):
-        with open(wordlist) as fp:
-            while True:
-                password = fp.readline()
-                if not password:
-                    break
-                login(username, password)
-                time.sleep(1)
-    read_file()
-
+    with open(wordlist) as fp:
+        while True:
+            password = fp.readline()
+            if not password:
+                 break
+            login(username, password)
+            time.sleep(1)
 
 def main():
     display_banner()
