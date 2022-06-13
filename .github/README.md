@@ -10,4 +10,4 @@ py main.py -u targetEmail@gmail.com -w wordlist.txt
 py main.py -u targetEmail@gmail.com
 ### Help command
 py main.py --help  
-![Banner][http://github.com/NaveTwizer/discord-brute-force/blob/main/.github/banner.png]
+![Banner][https://github.com/NaveTwizer/discord-brute-force/blob/main/.github/banner.png]
