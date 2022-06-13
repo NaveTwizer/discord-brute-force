@@ -69,7 +69,7 @@ def login(username, password):
         r = requests.post(URL, json=payload, headers=headers)
     except:
         pass
-    print(r.status_code)
+    #print(r.status_code)
     if r.status_code == 200:
         with open(f'Logs/{username}/success.txt', 'w') as f:
             f.write(f'{get_time()} Password for {username}: {password}')
